@@ -15,6 +15,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   border-bottom: 1px solid #ececec;
   width: 1600px;
@@ -178,6 +183,10 @@ header .board button {
 
 .content #takeCare .item {
   display: inline-block;
+}
+
+.content #team {
+  background-color: #f5f4fa;
 }
 
 .content #team h2 {
