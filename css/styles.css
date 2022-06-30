@@ -247,7 +247,7 @@ header .board button {
   border: 1px solid #eeeeee;
 }
 
-.content #projects #name {
+.content #projects .name {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -258,7 +258,7 @@ header .board button {
   color: #212121;
 }
 
-.content #projects #type {
+.content #projects .type {
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 188% */
