@@ -5,110 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
-      <span>Web</span>Studio
-      <nav>
-        <ul>
-          <li><a href="index.html">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
-    </header>
-    <main>
-      <div class="filter-bar">
-        <ul>
-          <li><input type="button" value="Wszystkie" /></li>
-          <li><input type="button" value="Strony" /></li>
-          <li><input type="button" value="Aplikacje" /></li>
-          <li><input type="button" value="Dizajn" /></li>
-          <li><input type="button" value="Marketing" /></li>
+      <div class="nav">
+        <h2 class="logo"><span>Web</span>Studio</h2>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Agencja</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="contact">
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
         </ul>
       </div>
-      <div>
-        <figure>
+    </header>
+    <main class="content">
+      <section id="filter-bar">
+        <ul class="items">
+          <li class="item"><input type="button" value="Wszystkie" /></li>
+          <li class="item"><input type="button" value="Strony" /></li>
+          <li class="item"><input type="button" value="Aplikacje" /></li>
+          <li class="item"><input type="button" value="Dizajn" /></li>
+          <li class="item"><input type="button" value="Marketing" /></li>
+        </ul>
+      </section>
+      <section id="projects">
+        <figure class="photo">
           <img src="images/img_Technocrack.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>Technocrack</b>
-            <p>Strona internetowa</p>
+            <p id="name">Technocrack</p>
+            <p id="type">Strona internetowa</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Grafika_New_Orlean .jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>Grafika New Orlean vs Golden Star</b>
-            <p>Dizajn</p>
+            <p id="name">Grafika New Orlean vs Golden Star</p>
+            <p id="type">Dizajn</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Restauracja_Seafood.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>Restauracja Seafood</b>
-            <p>Aplikacja</p>
+            <p id="name">Restauracja Seafood</p>
+            <p id="type">Aplikacja</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Projekt_Prime.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <p id="name">Projekt Prime</p>
+            <p id="type">Marketing</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Projekt_Boxes.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <p id="name">Projekt Boxes</p>
+            <p id="type">Aplikacja</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Inspiration_has_no_Borders.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <p id="name">Inspiration has no Borders</p>
+            <p id="type">Strona internetowa</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Magazyn Limited Edition_.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <p id="name">Magazyn Limited Edition</p>
+            <p id="type">Dizajn</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Projekt_LAB.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <b id="name">Projekt LAB</b>
+            <p id="type">Marketing</p>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="photo">
           <img src="images/img_Growing_Business.jpg" alt="" width="370" height="294" />
           <figcaption>
-            <b>text</b>
-            <p>text</p>
+            <p id="name">Growing Business</p>
+            <p id="type">Aplikacja</p>
           </figcaption>
         </figure>
-      </div>
+      </section>
     </main>
     <footer>
-      <span>Web</span>Studio
+      <h2 class="logo"><span>Web</span>Studio</h2>
       <address>
-        <ul>
-          <li>m. Warszawa, Aleje Jerozolimskie 21</li>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <ul class="items">
+          <li class="item">m. Warszawa, Aleje Jerozolimskie 21</li>
+          <li class="item">info@devstudio.com</li>
+          <li class="item">+48 111 111 111</li>
         </ul>
       </address>
     </footer>
