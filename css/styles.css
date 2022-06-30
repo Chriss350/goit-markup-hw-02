@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
+:root {
+  --MainFontColor: #000;
+  --secColor: #2196f3;
+  --contactColor: #757575;
+  --mottoColor: #fff;
+  --bgColor: #2f303a;
+}
+
 body {
-  color: #000;
+  color: var(--bgColor);
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
@@ -29,7 +37,7 @@ header .logo {
 }
 
 header .logo span {
-  color: #2196f3;
+  color: var(--secColor);
 }
 /* navigation bar links */
 header .menu {
@@ -48,12 +56,12 @@ header .menu a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #000;
+  color: var(--MainFontColor);
 }
 
 header .menu a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--secColor);
 }
 
 /* navigation bar contact */
@@ -73,18 +81,18 @@ header .contact a {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--contactColor);
 }
 
 header .contact a:hover,
 a:focus {
-  color: #2196f3;
+  color: var(--secColor);
 }
 /* header board */
 header .board {
   width: 1600px;
   height: 600px;
-  background: #2f303a;
+  background: var(--bgColor);
 }
 
 header .board .motto {
@@ -94,7 +102,7 @@ header .board .motto {
   letter-spacing: 0.06em;
   width: 696px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--mottoColor);
   text-align: center;
   margin: auto;
   padding-top: 200px;
@@ -105,7 +113,7 @@ header .board button {
   width: 200px;
   height: 50px;
   border: none;
-  background: #2196f3;
+  background: var(--secColor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -114,11 +122,14 @@ header .board button {
   text-align: center;
   letter-spacing: 0.06em;
   border: none;
-  color: #ffffff;
+  color: var(--mottoColor);
   margin: auto;
   display: block;
 }
 
+.content #advantages {
+  margin-top: 94px;
+}
 .content #advantages .items {
   list-style: none;
 }
@@ -128,6 +139,27 @@ header .board button {
 .content #advantages .item .box {
   width: 270px;
   height: 101px;
+  margin-right: 30px;
+}
+
+.content #advantages .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--bgColor);
+}
+.content #advantages .desc {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--contactColor);
 }
 
 .content #takeCare h2 {
@@ -170,14 +202,14 @@ header .board button {
   width: 270px;
   height: 368px;
 
-  background: #ffffff;
+  background: var(--mottoColor);
   /* material shadow v1 */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.content #team .box #name {
+.content #team .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -188,7 +220,7 @@ header .board button {
 
   color: #212121;
 }
-.content #team .box #workplace {
+.content #team .workplace {
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
@@ -196,7 +228,7 @@ header .board button {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--contactColor);
 }
 
 .content #filter-bar {
@@ -230,8 +262,8 @@ header .board button {
 .content #filter-bar input[type="button"]:hover {
   width: 93px;
   height: 38px;
-  background: #2196f3;
-  color: #ffffff;
+  background: var(--secColor);
+  color: var(--mottoColor);
   border-radius: 4px;
 }
 
@@ -243,7 +275,7 @@ header .board button {
   margin-right: 30px;
   width: 370px;
   height: 404px;
-  background: #ffffff;
+  background: var(--mottoColor);
   border: 1px solid #eeeeee;
 }
 
@@ -265,7 +297,7 @@ header .board button {
   margin: 4px 0 0 24px;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--contactColor);
 }
 
 /* Footer styles */
@@ -282,11 +314,11 @@ footer .logo {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--mottoColor);
 }
 
 footer .logo span {
-  color: #2196f3;
+  color: var(--secColor);
 }
 
 footer address .items {
@@ -299,7 +331,7 @@ footer address .item:first-child {
   line-height: 24px;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--mottoColor);
 }
 
 footer address .item {
