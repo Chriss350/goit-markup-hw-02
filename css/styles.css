@@ -67,9 +67,13 @@ header .menu a {
 }
 
 header .menu a:hover,
-a:focus {
+header .menu a:focus {
   color: var(--secColor);
 }
+
+/* header .menu a:focus {
+  color: var(--secColor);
+} */
 
 /* navigation bar contact */
 header .contact {
@@ -93,6 +97,10 @@ header .contact a {
 
 header .contact a:hover,
 a:focus {
+  color: var(--secColor);
+}
+
+header .contact a:focus {
   color: var(--secColor);
 }
 /* header board */
@@ -293,10 +301,18 @@ header .board button {
   background: #f5f4fa;
   border-radius: 4px;
   border: 0px;
+  cursor: pointer;
 }
 
-.content #filter-bar input[type="button"]:hover,
-input[type="button"]:focus {
+.content #filter-bar input[type="button"]:hover {
+  width: 93px;
+  height: 38px;
+  background: var(--secColor);
+  color: var(--mottoColor);
+  border-radius: 4px;
+}
+
+.content #filter-bar input[type="button"]:focus {
   width: 93px;
   height: 38px;
   background: var(--secColor);
@@ -374,10 +390,21 @@ footer address .item:first-child {
   color: var(--mottoColor);
 }
 
-footer address .item {
+footer address .item a {
   font-size: 14px;
   line-height: 2;
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+footer address .item a:hover,
+footer address .item a:focus {
+  font-size: 14px;
+  line-height: 2;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--secColor);
+  text-decoration: none;
 }
