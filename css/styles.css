@@ -17,19 +17,21 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
 }
 
 header {
   border-bottom: 1px solid #ececec;
-  width: 1600px;
+  width: 100%;
+  margin: auto;
 }
 
 header .nav {
   height: 80px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
 }
 
 header .logo {
@@ -37,7 +39,7 @@ header .logo {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
@@ -59,7 +61,7 @@ header .menu a {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--MainFontColor);
 }
@@ -83,7 +85,7 @@ header .contact a {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--contactColor);
@@ -98,12 +100,13 @@ header .board {
   width: 1600px;
   height: 600px;
   background: var(--bgColor);
+  margin: auto;
 }
 
 header .board .motto {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   width: 696px;
   text-transform: uppercase;
@@ -123,7 +126,7 @@ header .board button {
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   border: none;
@@ -132,19 +135,26 @@ header .board button {
   display: block;
 }
 
+.content {
+  margin: auto;
+}
 .content #advantages {
-  margin-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  width: 100%;
 }
 .content #advantages .items {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .content #advantages .item {
   display: inline-block;
+  margin: 0 15px;
 }
 .content #advantages .item .box {
   width: 270px;
   height: 101px;
-  margin-right: 30px;
 }
 
 .content #advantages .title {
@@ -159,7 +169,7 @@ header .board button {
 .content #advantages .desc {
   margin-top: 10px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -167,11 +177,17 @@ header .board button {
   color: var(--contactColor);
 }
 
+.content #takeCare {
+  padding-bottom: 94px;
+  padding-top: 94px;
+  width: 1600px;
+}
+
 .content #takeCare h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  /* text-align: center; */
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
@@ -179,21 +195,27 @@ header .board button {
 
 .content #takeCare .items {
   display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .content #takeCare .item {
   display: inline-block;
+  margin: 0 15px;
 }
 
 .content #team {
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: #f5f4fa;
+  width: 1600px;
 }
 
 .content #team h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  /* text-align: center; */
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: #212121;
@@ -201,10 +223,13 @@ header .board button {
 
 .content #team .items {
   display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 .content #team .item {
   display: inline-block;
+  margin: 0 15px;
 }
 
 .content #team .box {
@@ -221,7 +246,7 @@ header .board button {
 .content #team .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   /* identical to box height */
 
   text-align: center;
@@ -231,7 +256,7 @@ header .board button {
 }
 .content #team .workplace {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.18;
   /* identical to box height */
 
   text-align: center;
@@ -241,7 +266,10 @@ header .board button {
 }
 
 .content #filter-bar {
-  margin-top: 94px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 94px;
 }
 
 .content #filter-bar .items {
@@ -256,9 +284,7 @@ header .board button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   width: 93px;
@@ -277,21 +303,22 @@ header .board button {
 }
 
 .content #projects {
-  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .content #projects .photo {
-  margin-right: 30px;
   width: 370px;
   height: 404px;
   background: var(--mottoColor);
   border: 1px solid #eeeeee;
+  margin: 15px 15px;
 }
 
 .content #projects .name {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 
   margin: 20px 0 0 24px;
   letter-spacing: 0.06em;
@@ -301,7 +328,7 @@ header .board button {
 
 .content #projects .type {
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   /* identical to box height, or 188% */
   margin: 4px 0 0 24px;
   letter-spacing: 0.03em;
@@ -314,6 +341,7 @@ footer {
   background-color: #2f303a;
   width: 1600px;
   height: 252px;
+  margin: auto;
 }
 
 footer .logo {
@@ -324,6 +352,7 @@ footer .logo {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--mottoColor);
+  margin: 0;
 }
 
 footer .logo span {
@@ -337,7 +366,7 @@ footer address .items {
 
 footer address .item:first-child {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 2;
   letter-spacing: 0.03em;
 
   color: var(--mottoColor);
@@ -345,7 +374,7 @@ footer address .item:first-child {
 
 footer address .item {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 2;
   /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
