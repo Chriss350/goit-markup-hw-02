@@ -133,6 +133,7 @@ header .board button {
   color: var(--mottoColor);
   margin: auto;
   display: block;
+  cursor: pointer;
 }
 
 .content {
@@ -294,7 +295,8 @@ header .board button {
   border: 0px;
 }
 
-.content #filter-bar input[type="button"]:hover {
+.content #filter-bar input[type="button"]:hover,
+input[type="button"]:focus {
   width: 93px;
   height: 38px;
   background: var(--secColor);
